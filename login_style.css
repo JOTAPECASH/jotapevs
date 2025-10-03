@@ -1,0 +1,122 @@
+/* Estilo para login e registro - Tema "LotoGreen" */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-modal {
+    background-color: #0f3d2f;
+    border-radius: 12px;
+    width: 420px;
+    max-width: 90%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.logo-banner {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-banner img {
+    max-width: 250px;
+    height: auto;
+}
+
+.auth-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group input {
+    background-color: #071a14;
+    border: 1px solid #00b070;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.input-group input::placeholder {
+    color: #555;
+}
+
+.auth-form button[type="submit"] {
+    background-color: #00e091;
+    color: #000;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.auth-form button[type="submit"]:hover {
+    background-color: #00ffa1;
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-links a,
+.switch-form a {
+    color: #9a9a9a;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.form-links a:hover,
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-form .highlight {
+    color: #00e091;
+    font-weight: bold;
+}
